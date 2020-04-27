@@ -3,10 +3,6 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
   end
-  configure do
-      set :public_folder, 'public'
-      set :views, 'app/views'
-    end
 
     get '/recipes/new' do #loads new form
       erb :new
